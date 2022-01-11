@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/barber_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/barbershop_text"
+        app:layout_constraintBottom_toTopOf="@id/barber_logo"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/barber_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/barber_logo"
+        app:layout_constraintBottom_toTopOf="@id/bottom_side"
+        app:layout_constraintHeight_percent="0.54"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barber_text" />
+
+    <LinearLayout
+        android:id="@+id/bottom_side"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barber_logo">
+        <Button
+            android:id="@+id/next"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="GET STARTED"
+            android:textColor="@color/dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font1"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/reels">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.abbasov.barbershop.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.abbasov.barbershop.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/enter"
+        android:name="com.abbasov.barbershop.Enter"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter" />
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.abbasov.barbershop.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/reels"
+        android:name="com.abbasov.barbershop.Reels"
+        android:label="fragment_reels"
+        tools:layout="@layout/fragment_reels" />
+</navigation>
